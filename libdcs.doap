@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns="http://usefulinc.com/ns/doap#">
+  <name>OpenDCS libdcs</name>
+  <shortname>libdcs</shortname>
+  <shortdesc>OpenDCS Components</shortdesc>
+  <description>Types and operations for working with and creating OpenDCS systems</description>
+
+  <homepage rdf:resource="http://libdcs.github.io" />
+  <license rdf:resource="https://spdx.org/licenses/LGPL-3.0-or-later.html" />
+  <download-page rdf:resource="https://github.com/open-dcs/libdcs/releases" />
+  <bug-database rdf:resource="https://github.com/open-dcs/libdcs/issues" />
+
+  <repository>
+    <GitRepository>
+      <location rdf:resource="https://github.com/open-dcs/libdcs.git"/>
+      <browse rdf:resource="https://github.com/open-dcs/libdcs/"/>
+    </GitRepository>
+  </repository>
+
+  <!-- FIXME: Make this exist -->
+  <category rdf:resource="https://open-dcs.github.io/projects/category/library" />
+
+  <programming-language>C</programming-language>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Geoff Johnson</foaf:name>
+      <foaf:mbox rdf:resource="mailto:geoff.jay@gmail.com"/>
+    </foaf:Person>
+  </maintainer>
+
+  <author>
+    <foaf:Person>
+      <foaf:name>Geoff Johnson</foaf:name>
+      <foaf:mbox rdf:resource="mailto:geoff.jay@gmail.com"/>
+    </foaf:Person>
+  </author>
+
+</Project>

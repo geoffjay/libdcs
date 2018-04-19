@@ -1,0 +1,7 @@
+*.*~
+*.swp
+
+_build/
+
+doc/html/
+doc/latex/
