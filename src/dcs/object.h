@@ -5,9 +5,12 @@
  * For full terms see the included LICENSE file.
  */
 
-#pragma once
+#ifndef __DCS_OBJECT_H__
+#define __DCS_OBJECT_H__
 
 #include "common.h"
+
+DCS_BEGIN_DECLS
 
 /** Base object for inheritance */
 typedef struct DcsObject {
@@ -22,30 +25,17 @@ typedef struct DcsObject {
  */
 typedef void (*object_free_func)(void *p);
 
-/*! \brief Create DcsObject
- *
- * Create a new DcsObject
- *
- * \return DcsObject a newly allocated DcsObject
- */
+/** Make a new base object */
 _dcs_public_ DcsObject * dcs_object_new(void)
     __attribute__((warn_unused_result));
 
-/*! \brief Set UUID
- *
- * Assign a UUID to the object
- *
- * \param object Object to assign UUID to
- * \param uuid Value to use for the UUID
- */
+/** Set the object UUID value */
 _dcs_public_ void dcs_object_set_uuid(DcsObject *object, const char *uuid);
 
-/*! \brief Get UUID
- *
- * Retrieve the UUID value
- *
- * \param object Object to return the UUID of
- * \return char * UUID string, NULL if not set
- */
+/** Get the object UUID value */
 _dcs_public_ char * dcs_object_get_uuid(DcsObject *object)
      __attribute__((warn_unused_result));
+
+DCS_END_DECLS
+
+#endif /* __DCS_OBJECT_H__ */

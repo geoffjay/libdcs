@@ -14,6 +14,12 @@ dcs_object_init(DcsObject *object)
     dcs_object_set_uuid(object, "obj0");
 }
 
+/*! \brief Create DcsObject
+ *
+ * Create a new DcsObject
+ *
+ * \return DcsObject a newly allocated DcsObject
+ */
 DcsObject *
 dcs_object_new()
 {
@@ -29,6 +35,13 @@ dcs_object_free(DcsObject *object)
     free(object);
 }
 
+/*! \brief Set UUID
+ *
+ * Assign a UUID to the object
+ *
+ * \param object Object to assign UUID to
+ * \param uuid Value to use for the UUID
+ */
 void
 dcs_object_set_uuid(DcsObject *object, const char *uuid)
 {
@@ -45,6 +58,13 @@ dcs_object_set_uuid(DcsObject *object, const char *uuid)
     strlcpy(object->uuid, uuid, len);
 }
 
+/*! \brief Get UUID
+ *
+ * Retrieve the UUID value
+ *
+ * \param object Object to return the UUID of
+ * \return char * UUID string, NULL if not set
+ */
 char *
 dcs_object_get_uuid(DcsObject *object)
 {

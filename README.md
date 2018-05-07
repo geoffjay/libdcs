@@ -2,6 +2,8 @@
 
 C99 compatible library of things for OpenDCS.
 
+Starting over removing GLib/GObject as dependencies.
+
 ## Dependencies
 
 ### Fedora

@@ -1,17 +1,23 @@
+option('enable-docs',
+         type: 'boolean',
+        value: false,
+  description: 'Build documentation',
+)
+
 option('enable-examples',
-    type: 'boolean',
-    value: false,
-    description: 'build examples'
+         type: 'boolean',
+        value: false,
+  description: 'Build examples'
 )
 
 option('enable-tests',
-    type: 'boolean',
-    value: true,
-    description: 'build tests'
+         type: 'boolean',
+        value: true,
+  description: 'Build tests'
 )
 
 option('shared-lib',
-    type: 'boolean',
-    value: false,
-    description: 'build shared library'
+         type: 'boolean',
+        value: false,
+  description: 'Build shared library'
 )
